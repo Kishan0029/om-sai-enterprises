@@ -70,7 +70,7 @@ export default function AboutPage() {
             <div className="relative space-y-6">
                 <div className="relative">
                   <img 
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/Mr.-Anandagouda-Patil-1771789997351.png?width=8000&height=8000&resize=contain" 
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/Mr.-Anandagouda-Patil-1771789997351.png?width=800&height=800&resize=contain" 
                     alt="Mr. Anandagouda Patil – Proprietor, Om Sai Enterprises" 
                     className="w-full aspect-[4/5] object-cover object-top"
                   />

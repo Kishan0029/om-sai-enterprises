@@ -32,7 +32,7 @@ export function Footer() {
               <Link href="/" className="flex items-center gap-3">
                 <div className="p-0">
                     <img 
-                      src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/Untitled-design-1769544802611.png?width=8000&height=8000&resize=contain" 
+                      src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/Untitled-design-1769544802611.png?width=800&height=800&resize=contain" 
                       alt="Om Sai Enterprises Logo" 
                       className="h-12 w-auto"
                     />
@@ -108,9 +108,14 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-xs">
-            © {new Date().getFullYear()} Om Sai Enterprises. All Rights Reserved.
-          </p>
+          <div className="flex flex-col gap-2 items-center md:items-start">
+            <p className="text-gray-500 text-xs">
+              © {new Date().getFullYear()} Om Sai Enterprises. All Rights Reserved.
+            </p>
+            <p className="text-gray-400 text-sm mt-1">
+              Developed by <a href="https://gonextverse.in/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-brand-red transition-colors font-bold tracking-wider">NEXTVERSE</a>
+            </p>
+          </div>
           <div className="flex gap-6 text-xs text-gray-500">
             <Link href="/compliance" className="hover:text-white">GSTIN: 29BMEPP1005K1Z2</Link>
             <p>Designed for Industrial Excellence</p>

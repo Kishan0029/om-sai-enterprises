@@ -8,22 +8,22 @@ const categories = [
     subtitle: "Skilled professionals operating advanced machinery with accuracy and expertise",
     images: [
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/1-1771786718789.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/1-1771786718789.png?width=800&height=800&resize=contain",
         alt: "CNC Machine Operator",
         caption: "CNC Machine Operator",
       },
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/2-1771786718790.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/2-1771786718790.png?width=800&height=800&resize=contain",
         alt: "Electrical Panel Technician",
         caption: "Electrical Panel Technician",
       },
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/3-1771786718789.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/3-1771786718789.png?width=800&height=800&resize=contain",
         alt: "Pattern & Mould Inspector",
         caption: "Pattern & Mould Inspector",
       },
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/4-1771786719240.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/4-1771786719240.png?width=800&height=800&resize=contain",
         alt: "Foundry Melting Operator",
         caption: "Foundry Melting Operator",
       },
@@ -34,22 +34,22 @@ const categories = [
     subtitle: "Foundry and heavy-process workers driving production at the heart of manufacturing",
     images: [
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/5-1771786718814.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/5-1771786718814.png?width=800&height=800&resize=contain",
         alt: "Sand Moulding Worker",
         caption: "Sand Moulding Worker",
       },
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/6-1771786717621.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/6-1771786717621.png?width=800&height=800&resize=contain",
         alt: "Grinding & Finishing Operator",
         caption: "Grinding & Finishing Operator",
       },
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/7-1771786718788.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/7-1771786718788.png?width=800&height=800&resize=contain",
         alt: "Surface Coating Specialist",
         caption: "Surface Coating Specialist",
       },
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/8-1771786718790.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/8-1771786718790.png?width=800&height=800&resize=contain",
         alt: "Precision Assembly Operator",
         caption: "Precision Assembly Operator",
       },
@@ -60,17 +60,17 @@ const categories = [
     subtitle: "Reliable workers managing final assembly, material handling, and dispatch operations",
     images: [
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/9-1771786958350.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/9-1771786958350.png?width=800&height=800&resize=contain",
         alt: "Assembly Line Workers",
         caption: "Assembly Line Workers",
       },
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/10-1771786958444.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/10-1771786958444.png?width=800&height=800&resize=contain",
         alt: "Fettling & Finishing Worker",
         caption: "Fettling & Finishing Worker",
       },
       {
-        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/11-1771786959691.png?width=8000&height=8000&resize=contain",
+        src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/11-1771786959691.png?width=800&height=800&resize=contain",
         alt: "Warehouse & Logistics Coordinator",
         caption: "Warehouse & Logistics Coordinator",
       },

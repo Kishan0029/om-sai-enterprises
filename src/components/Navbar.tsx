@@ -39,7 +39,7 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
                     <img 
-                      src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/Untitled-design-1769544802611.png?width=8000&height=8000&resize=contain" 
+                      src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/Untitled-design-1769544802611.png?width=800&height=800&resize=contain" 
                       alt="Om Sai Enterprises Logo" 
                       className="h-12 w-auto"
                     />

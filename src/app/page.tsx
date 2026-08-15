@@ -211,18 +211,18 @@ export default function HomePage() {
           `}</style>
           <div className="marquee-track">
             {[
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/1-1771828846847.png?width=8000&height=8000&resize=contain", alt: "Akash Forming Technologies" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/2-1771828845787.png?width=8000&height=8000&resize=contain", alt: "Ashok Iron Group" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/3-1771828846493.png?width=8000&height=8000&resize=contain", alt: "Belgaum Ferrocast" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/4-1771828846800.png?width=8000&height=8000&resize=contain", alt: "Creintors Group of Companies" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/5-1771828845802.png?width=8000&height=8000&resize=contain", alt: "The Allied Founders Pvt. Ltd." },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/6-1771828846390.png?width=8000&height=8000&resize=contain", alt: "Shanti Foumach Private Limited" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/1-1771828846847.png?width=8000&height=8000&resize=contain", alt: "Akash Forming Technologies" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/2-1771828845787.png?width=8000&height=8000&resize=contain", alt: "Ashok Iron Group" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/3-1771828846493.png?width=8000&height=8000&resize=contain", alt: "Belgaum Ferrocast" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/4-1771828846800.png?width=8000&height=8000&resize=contain", alt: "Creintors Group of Companies" },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/5-1771828845802.png?width=8000&height=8000&resize=contain", alt: "The Allied Founders Pvt. Ltd." },
-              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/6-1771828846390.png?width=8000&height=8000&resize=contain", alt: "Shanti Foumach Private Limited" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/1-1771828846847.png?width=800&height=800&resize=contain", alt: "Akash Forming Technologies" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/2-1771828845787.png?width=800&height=800&resize=contain", alt: "Ashok Iron Group" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/3-1771828846493.png?width=800&height=800&resize=contain", alt: "Belgaum Ferrocast" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/4-1771828846800.png?width=800&height=800&resize=contain", alt: "Creintors Group of Companies" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/5-1771828845802.png?width=800&height=800&resize=contain", alt: "The Allied Founders Pvt. Ltd." },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/6-1771828846390.png?width=800&height=800&resize=contain", alt: "Shanti Foumach Private Limited" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/1-1771828846847.png?width=800&height=800&resize=contain", alt: "Akash Forming Technologies" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/2-1771828845787.png?width=800&height=800&resize=contain", alt: "Ashok Iron Group" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/3-1771828846493.png?width=800&height=800&resize=contain", alt: "Belgaum Ferrocast" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/4-1771828846800.png?width=800&height=800&resize=contain", alt: "Creintors Group of Companies" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/5-1771828845802.png?width=800&height=800&resize=contain", alt: "The Allied Founders Pvt. Ltd." },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/6-1771828846390.png?width=800&height=800&resize=contain", alt: "Shanti Foumach Private Limited" },
             ].map((logo, idx) => (
               <div
                 key={idx}
@@ -281,7 +281,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div className="relative">
                 <img 
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/Om-Sai-Enterprises-Office-1771791740214.png?width=8000&height=8000&resize=contain" 
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/Om-Sai-Enterprises-Office-1771791740214.png?width=800&height=800&resize=contain" 
                   alt="Om Sai Enterprises Office"
                     className="w-full object-contain hover:scale-105 transition-all duration-700"
                 />
@@ -409,7 +409,7 @@ export default function HomePage() {
               <Button size="lg" className="bg-white hover:bg-gray-100 text-[#25D366] rounded-none px-12 font-black h-20 text-xl tracking-tighter border-none shadow-xl" asChild>
                 <a href="https://wa.me/7349710589">
                   <img 
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/whatsapp-icon-seeklogo-1769544468648.png?width=8000&height=8000&resize=contain" 
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/whatsapp-icon-seeklogo-1769544468648.png?width=800&height=800&resize=contain" 
                     alt="WhatsApp" 
                     className="mr-3 h-8 w-8 object-contain"
                   /> WHATSAPP NOW
