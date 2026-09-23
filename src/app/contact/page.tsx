@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -8,6 +9,32 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    phone: "",
+    email: "",
+    requirements: ""
+  })
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const { name, company, phone, email, requirements } = formData
+    
+    const message = `*New Enquiry from Website*
+    
+*Name:* ${name}
+*Company:* ${company}
+*Phone:* ${phone}
+*Email:* ${email || "N/A"}
+
+*Requirements:*
+${requirements}`
+
+    const whatsappUrl = `https://wa.me/917349710589?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, "_blank")
+  }
+
   return (
     <div className="flex flex-col">
       {/* Sub-hero */}
@@ -92,35 +119,65 @@ export default function ContactPage() {
                <h2 className="text-3xl font-heading font-black text-brand-dark mb-4 uppercase tracking-tight">Send Enquiry</h2>
                <p className="text-muted-foreground mb-12">Required fields are marked with *</p>
                
-               <form className="space-y-6">
+               <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-xs font-bold uppercase tracking-widest text-brand-dark">Full Name *</label>
-                      <Input placeholder="Enter your name" className="rounded-none border-2 focus:border-brand-red h-12" />
+                      <Input 
+                        placeholder="Enter your name" 
+                        className="rounded-none border-2 focus:border-brand-red h-12" 
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        required
+                      />
                     </div>
                     <div className="space-y-2">
                       <label className="text-xs font-bold uppercase tracking-widest text-brand-dark">Company Name *</label>
-                      <Input placeholder="Enter company name" className="rounded-none border-2 focus:border-brand-red h-12" />
+                      <Input 
+                        placeholder="Enter company name" 
+                        className="rounded-none border-2 focus:border-brand-red h-12" 
+                        value={formData.company}
+                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                        required
+                      />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-xs font-bold uppercase tracking-widest text-brand-dark">Phone Number *</label>
-                      <Input placeholder="Enter phone number" className="rounded-none border-2 focus:border-brand-red h-12" />
+                      <Input 
+                        placeholder="Enter phone number" 
+                        className="rounded-none border-2 focus:border-brand-red h-12" 
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        required
+                      />
                     </div>
                     <div className="space-y-2">
                       <label className="text-xs font-bold uppercase tracking-widest text-brand-dark">Email Address</label>
-                      <Input placeholder="Enter email address" className="rounded-none border-2 focus:border-brand-red h-12" />
+                      <Input 
+                        type="email"
+                        placeholder="Enter email address" 
+                        className="rounded-none border-2 focus:border-brand-red h-12" 
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      />
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-xs font-bold uppercase tracking-widest text-brand-dark">Requirement Details *</label>
-                    <Textarea placeholder="Tell us about your manpower needs (Types, Quantity, Location)" className="rounded-none border-2 focus:border-brand-red min-h-[150px]" />
+                    <Textarea 
+                      placeholder="Tell us about your manpower needs (Types, Quantity, Location)" 
+                      className="rounded-none border-2 focus:border-brand-red min-h-[150px]" 
+                      value={formData.requirements}
+                      onChange={(e) => setFormData({ ...formData, requirements: e.target.value })}
+                      required
+                    />
                   </div>
 
-                  <Button className="w-full bg-brand-red hover:bg-brand-red/90 text-white rounded-none h-16 font-black text-lg uppercase tracking-widest">
+                  <Button type="submit" className="w-full bg-brand-red hover:bg-brand-red/90 text-white rounded-none h-16 font-black text-lg uppercase tracking-widest">
                     Submit Enquiry <Send className="ml-2 w-5 h-5" />
                   </Button>
                </form>
