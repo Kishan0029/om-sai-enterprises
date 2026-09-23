@@ -1,5 +1,6 @@
 "use client"
 
+import { motion, useScroll, useTransform } from "framer-motion"
 import { Check, Info, Users, ShieldCheck, Zap, Repeat } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -40,6 +41,9 @@ const manpowerTypes = [
 ]
 
 export default function ServicesPage() {
+  const { scrollY } = useScroll()
+  const y = useTransform(scrollY, [0, 500], [0, 150])
+
   return (
     <div className="flex flex-col">
       {/* Sub-hero */}
@@ -52,7 +56,7 @@ export default function ServicesPage() {
             100% Contract-based manpower solutions tailored for your industrial scale.
           </p>
         </div>
-        <div className="absolute top-0 right-0 h-full w-1/3 bg-brand-red skew-x-12 translate-x-1/2 opacity-20"></div>
+        <motion.div style={{ y }} className="absolute -top-[20%] right-0 h-[140%] w-1/3 bg-brand-red skew-x-12 translate-x-1/2 opacity-20"></motion.div>
       </section>
 
       {/* Detailed Manpower Types */}

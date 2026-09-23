@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import { Shield, Users, Target, Handshake, Heart, Award } from "lucide-react"
 
@@ -28,6 +28,9 @@ const values = [
 ]
 
 export default function AboutPage() {
+  const { scrollY } = useScroll()
+  const y = useTransform(scrollY, [0, 500], [0, 150])
+
   return (
     <div className="flex flex-col">
       {/* Sub-hero */}
@@ -40,7 +43,7 @@ export default function AboutPage() {
             From a small team of 20 to a workforce of thousands, our growth is powered by trust and excellence.
           </p>
         </div>
-        <div className="absolute top-0 right-0 h-full w-1/3 bg-brand-red skew-x-12 translate-x-1/2 opacity-20"></div>
+        <motion.div style={{ y }} className="absolute -top-[20%] right-0 h-[140%] w-1/3 bg-brand-red skew-x-12 translate-x-1/2 opacity-20"></motion.div>
       </section>
 
       {/* History & Message */}

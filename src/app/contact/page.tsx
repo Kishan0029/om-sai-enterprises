@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { motion, useScroll, useTransform } from "framer-motion"
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -9,6 +10,9 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function ContactPage() {
+  const { scrollY } = useScroll()
+  const y = useTransform(scrollY, [0, 500], [0, 150])
+
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -47,7 +51,7 @@ ${requirements}`
             Have a requirement? Contact us for a customized manpower solution and quote.
           </p>
         </div>
-        <div className="absolute top-0 right-0 h-full w-1/3 bg-brand-red skew-x-12 translate-x-1/2 opacity-20"></div>
+        <motion.div style={{ y }} className="absolute -top-[20%] right-0 h-[140%] w-1/3 bg-brand-red skew-x-12 translate-x-1/2 opacity-20"></motion.div>
       </section>
 
       <section className="py-24">

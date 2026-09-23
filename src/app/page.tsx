@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import { useRef, useState } from "react"
 import { 
@@ -112,17 +112,22 @@ const whyChooseUs = [
 ]
 
 export default function HomePage() {
+  const { scrollY } = useScroll()
+  const y = useTransform(scrollY, [0, 1000], [0, 300])
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center overflow-hidden bg-brand-dark">
-        <div className="absolute inset-0 z-0">
-          <Image 
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" 
-            alt="Industrial Background"
-            fill
-            className="object-cover opacity-40 grayscale"
-          />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <motion.div style={{ y }} className="w-full h-[120%] -top-[10%] relative">
+            <Image 
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" 
+              alt="Industrial Background"
+              fill
+              className="object-cover opacity-40 grayscale"
+            />
+          </motion.div>
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"></div>
         </div>
 
@@ -196,7 +201,10 @@ export default function HomePage() {
             TRUSTED BY INDUSTRIES ACROSS <span className="text-brand-red">BELAGAVI</span>
           </h2>
         </div>
-        <div className="overflow-hidden relative w-full">
+        <div 
+          className="overflow-hidden relative w-full"
+          style={{ maskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)", WebkitMaskImage: "linear-gradient(to right, transparent, black 15%, black 85%, transparent)" }}
+        >
           <style>{`
             @keyframes marquee {
               0% { transform: translateX(0); }
@@ -236,7 +244,7 @@ export default function HomePage() {
                   alt={logo.alt}
                   width={200}
                   height={80}
-                  className="max-w-full max-h-full object-contain"
+                  className="max-w-full max-h-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
                   style={{ padding: "8px" }}
                 />
               </div>
