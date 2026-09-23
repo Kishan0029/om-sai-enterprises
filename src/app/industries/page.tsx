@@ -81,8 +81,8 @@ export default function IndustriesPage() {
               </div>
             </div>
             <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-               <Image src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=2070&auto=format&fit=crop" alt="Industrial 1" width={1000} height={600} className="w-full h-64 object-cover grayscale" />
-               <Image src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop" alt="Industrial 2" width={1000} height={600} className="w-full h-64 object-cover grayscale mt-8" />
+               <Image src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/1-1771786718789.png?width=800&height=800&resize=contain" alt="CNC Machine Operator" width={1000} height={600} className="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+               <Image src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/5-1771786718814.png?width=800&height=800&resize=contain" alt="Sand Moulding Worker" width={1000} height={600} className="w-full h-64 object-cover grayscale mt-8 hover:grayscale-0 transition-all duration-500" />
             </div>
           </div>
         </div>
