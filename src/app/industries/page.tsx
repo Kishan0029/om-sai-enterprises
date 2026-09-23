@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Factory, Cpu, Hammer, Settings, Truck, Shield, Timer, Users } from "lucide-react"
-
+import Image from "next/image"
 const industries = [
   { name: "Manufacturing", icon: Factory },
   { name: "Foundry", icon: Settings },
@@ -81,8 +81,8 @@ export default function IndustriesPage() {
               </div>
             </div>
             <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-               <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=2070&auto=format&fit=crop" alt="Industrial 1" className="w-full h-64 object-cover grayscale" />
-               <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop" alt="Industrial 2" className="w-full h-64 object-cover grayscale mt-8" />
+               <Image src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=2070&auto=format&fit=crop" alt="Industrial 1" width={1000} height={600} className="w-full h-64 object-cover grayscale" />
+               <Image src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop" alt="Industrial 2" width={1000} height={600} className="w-full h-64 object-cover grayscale mt-8" />
             </div>
           </div>
         </div>

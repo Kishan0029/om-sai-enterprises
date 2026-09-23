@@ -1,6 +1,7 @@
 "use client"
 
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -128,10 +129,12 @@ export default function ContactPage() {
                   <p className="text-sm font-bold text-muted-foreground uppercase tracking-widest">Or Reach Us Instantly On</p>
                     <Button size="lg" className="bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-none px-12 font-black h-20 text-xl tracking-tighter w-full max-w-sm shadow-lg" asChild>
                       <a href="https://wa.me/7349710589?text=Hello%20Om%20Sai%20Enterprises%2C%20I%20am%20looking%20for%20reliable%20manpower%20supply%20services.%20Please%20contact%20me.">
-                        <img 
+                        <Image 
                           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/whatsapp-icon-seeklogo-1769544468648.png?width=800&height=800&resize=contain" 
                           alt="WhatsApp" 
-                          className="mr-3 h-8 w-8 object-contain"
+                          width={32}
+                          height={32}
+                          className="mr-3 object-contain"
                         /> WHATSAPP CHAT
                       </a>
                     </Button>

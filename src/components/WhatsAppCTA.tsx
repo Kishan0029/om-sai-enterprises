@@ -1,7 +1,7 @@
 "use client"
 
 import { MessageSquare } from "lucide-react"
-
+import Image from "next/image"
 export function WhatsAppCTA() {
   const phoneNumber = "7349710589"
   const message = "Hello Om Sai Enterprises, I am looking for reliable manpower supply services. Please contact me."
@@ -16,10 +16,12 @@ export function WhatsAppCTA() {
       aria-label="Contact us on WhatsApp"
     >
       <div className="relative">
-          <img 
+          <Image 
             src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/Untitled-design-1769544178396.png?width=800&height=800&resize=contain" 
             alt="WhatsApp" 
-            className="w-8 h-8 object-contain"
+            width={32}
+            height={32}
+            className="object-contain"
           />
       </div>
       <span className="font-bold text-sm hidden group-hover:block transition-all duration-300">

@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { useRef, useState } from "react"
 import { 
   Users, 
@@ -116,10 +117,11 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center overflow-hidden bg-brand-dark">
         <div className="absolute inset-0 z-0">
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" 
             alt="Industrial Background"
-            className="w-full h-full object-cover opacity-40 grayscale"
+            fill
+            className="object-cover opacity-40 grayscale"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"></div>
         </div>
@@ -229,9 +231,11 @@ export default function HomePage() {
                 className="flex items-center justify-center shrink-0"
                 style={{ width: "220px", height: "100px", marginRight: "60px" }}
               >
-                <img
+                <Image
                   src={logo.src}
                   alt={logo.alt}
+                  width={200}
+                  height={80}
                   className="max-w-full max-h-full object-contain"
                   style={{ padding: "8px" }}
                 />
@@ -280,10 +284,12 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div className="relative">
-                <img 
+                <Image 
                   src="/office.jpg" 
                   alt="Om Sai Enterprises Office"
-                    className="w-full object-contain hover:scale-105 transition-all duration-700"
+                  width={800}
+                  height={800}
+                  className="w-full object-contain hover:scale-105 transition-all duration-700"
                 />
               <div className="absolute -bottom-8 -right-8 bg-brand-red text-white p-12 hidden md:block">
                 <span className="text-6xl font-black font-heading block">07+</span>
@@ -408,10 +414,12 @@ export default function HomePage() {
             </Button>
               <Button size="lg" className="bg-white hover:bg-gray-100 text-[#25D366] rounded-none px-12 font-black h-20 text-xl tracking-tighter border-none shadow-xl" asChild>
                 <a href="https://wa.me/7349710589">
-                  <img 
+                  <Image 
                     src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/whatsapp-icon-seeklogo-1769544468648.png?width=800&height=800&resize=contain" 
                     alt="WhatsApp" 
-                    className="mr-3 h-8 w-8 object-contain"
+                    width={32}
+                    height={32}
+                    className="mr-3 object-contain"
                   /> WHATSAPP NOW
                 </a>
               </Button>

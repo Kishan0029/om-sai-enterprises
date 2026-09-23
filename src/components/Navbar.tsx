@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -38,9 +39,11 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
-                    <img 
+                    <Image 
                       src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/Untitled-design-1769544802611.png?width=800&height=800&resize=contain" 
                       alt="Om Sai Enterprises Logo" 
+                      width={100}
+                      height={48}
                       className="h-12 w-auto"
                     />
               <div className="flex flex-col">

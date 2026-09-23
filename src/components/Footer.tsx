@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Phone, Mail, MapPin, MessageSquare, ShieldCheck, Clock } from "lucide-react"
 
 const footerLinks = {
@@ -31,9 +32,11 @@ export function Footer() {
             <div className="space-y-6">
               <Link href="/" className="flex items-center gap-3">
                 <div className="p-0">
-                    <img 
+                    <Image 
                       src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/6257f277-0e3c-4892-8cba-be0fbf978a58/Untitled-design-1769544802611.png?width=800&height=800&resize=contain" 
                       alt="Om Sai Enterprises Logo" 
+                      width={100}
+                      height={48}
                       className="h-12 w-auto"
                     />
                 </div>

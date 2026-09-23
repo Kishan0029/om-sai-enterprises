@@ -3,7 +3,7 @@
 import { Check, Info, Users, ShieldCheck, Zap, Repeat } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-
+import Image from "next/image"
 const manpowerTypes = [
   {
     category: "Skilled Manpower",
@@ -84,9 +84,11 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="relative">
-               <img 
+               <Image 
                  src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=2070&auto=format&fit=crop" 
                  alt="Deployment" 
+                 width={1920}
+                 height={1080}
                  className="w-full aspect-video object-cover grayscale"
                />
                <div className="absolute inset-0 bg-brand-red/20"></div>

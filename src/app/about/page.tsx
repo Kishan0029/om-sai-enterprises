@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { Shield, Users, Target, Handshake, Heart, Award } from "lucide-react"
 
 const values = [
@@ -69,9 +70,11 @@ export default function AboutPage() {
             </div>
             <div className="relative space-y-6">
                 <div className="relative">
-                  <img 
+                  <Image 
                     src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/Mr.-Anandagouda-Patil-1771789997351.png?width=800&height=800&resize=contain" 
                     alt="Mr. Anandagouda Patil – Proprietor, Om Sai Enterprises" 
+                    width={800}
+                    height={1000}
                     className="w-full aspect-[4/5] object-cover object-top"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-brand-dark/80 px-5 py-3">
@@ -82,9 +85,11 @@ export default function AboutPage() {
                 </div>
 
                 <div className="relative mt-12">
-                  <img 
+                  <Image 
                     src="/team.jpg" 
                     alt="Our Team" 
+                    width={1000}
+                    height={562}
                     className="w-full aspect-video object-cover object-center"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-brand-dark/80 px-5 py-3">
