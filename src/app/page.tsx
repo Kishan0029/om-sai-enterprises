@@ -281,7 +281,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div className="relative">
                 <img 
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/Om-Sai-Enterprises-Office-1771791740214.png?width=800&height=800&resize=contain" 
+                  src="/office.jpg" 
                   alt="Om Sai Enterprises Office"
                     className="w-full object-contain hover:scale-105 transition-all duration-700"
                 />

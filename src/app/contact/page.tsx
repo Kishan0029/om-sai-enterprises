@@ -69,15 +69,19 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="mt-12 h-80 bg-muted border overflow-hidden relative group">
-                 <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-all z-10"></div>
-                 <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2066&auto=format&fit=crop" alt="Map Placeholder" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
-                 <div className="absolute inset-0 flex items-center justify-center z-20">
-                    <div className="bg-white p-4 shadow-xl border-l-4 border-brand-red">
-                       <p className="font-black text-brand-dark uppercase tracking-widest text-xs">Belagavi, Karnataka</p>
-                    </div>
-                 </div>
+              {/* Google Maps Location */}
+              <div className="mt-12 h-96 bg-muted border overflow-hidden relative group">
+                <iframe 
+                  src="https://maps.google.com/maps?q=15.8028722,74.4825233&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={false} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Om Sai Enterprises Location"
+                  className="grayscale group-hover:grayscale-0 transition-all duration-700"
+                ></iframe>
               </div>
             </div>
 

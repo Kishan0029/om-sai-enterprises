@@ -81,6 +81,19 @@ export default function AboutPage() {
                   <div className="absolute -top-10 -left-10 w-40 h-40 border-8 border-brand-red/20 -z-10"></div>
                 </div>
 
+                <div className="relative mt-12">
+                  <img 
+                    src="/team.jpg" 
+                    alt="Our Team" 
+                    className="w-full aspect-video object-cover object-center"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-brand-dark/80 px-5 py-3">
+                    <p className="text-white font-black text-sm uppercase tracking-widest">Our Team</p>
+                    <p className="text-brand-red text-xs font-bold uppercase tracking-widest">Om Sai Enterprises</p>
+                  </div>
+                  <div className="absolute -top-10 -right-10 w-40 h-40 border-8 border-brand-red/20 -z-10"></div>
+                </div>
+
               </div>
           </div>
         </div>
